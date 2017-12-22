@@ -1,0 +1,20 @@
+[mysqld]                                                                                                     
+#绕过密码登陆                                                                                             
+skip-grant-tables                                                                                        
+#大小写不敏感                                                                                             
+lower_case_table_names=1                                                                         
+
+#mysql相关路径                                                                                           
+basedir  =  /usr/local/mysql                                                                         
+datadir  =  /usr/local/mysql/data                                                                 
+
+port  =  3306                                                                                                
+server_id  =  1                                                                                               
+socket  =  /var/lib/mysql/mysql.sock                                                             
+
+#Attention please !!!  The key is different from charset key in [client]             
+character_set_server  =  utf8                                                                         
+
+[client]                                                                                                          
+#Attention please !!!  The key is different from charset key in [mysqld]          
+default-character-set  =  utf8
